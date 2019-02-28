@@ -19,9 +19,8 @@
         <h:outputText value="Last Name: " />
         <p:inputText id="last-name" value="#{mainController.lastName}" />
 
-        <p:commandButton id="submit" value="Submit"
-          update="greeting-panel"
-          oncomplete="PF('greetingDialog').show()" />
+        <!-- <p:commandButton ajax="false" class="btn btn-default btn-block" update="@form" id="helloworld-form" value="Login" action="#{controllerBean.checkLogin}" /> -->
+        <p:commandButton id="submit" value="Submit" update="greeting-panel" oncomplete="PF('greetingDialog').show()" />
       </h:panelGrid>
     </p:panel>
 
